@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <script>window.onload = deck.build()</script>
+  <script>window.onload = deck.shuffle()</script>
+  <div class="container">
+    <a href=# onclick="javascript:game.setGameMode(1);"><span class="game-mode">Low vs. High</span></a>
+    <span class="pole">|</span>
+    <a href=# onclick="javascript:game.setGameMode(0);"><span class="game-mode">Red vs. Black</span></a>
+  </div>
+  <div class="message">
+    <span id="card-text">Pick a color</span>
+  </div>
+  <div class="main">
+    <img src="images/PNGs/card-top.png" id="card-art">
+    <div class="choice" id="red" onclick="runtime(this.id);"></div>
+    <div class="choice" id="black" onclick="runtime(this.id);"></div>
+  </div>
+</body>
